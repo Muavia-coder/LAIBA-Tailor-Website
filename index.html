@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAIBA TAILORS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    
+    <div class="top-bar">
+        <div class="top-left-text">
+            <p>LAIBA TAILORS</p>
+        </div>
+<div class="top-right-nav">
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div> 
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="#home-section" >Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#services-section">Services</a></li>
+            <li><a href="#contact-section">Contact Us</a></li>
+            <li class="rate-list-button"><a href="/images/WhatsApp Image 2024-09-02 at 2.41.23 PM.jpeg" id="para">Rate List</a></li>
+        </ul>
+    </nav>
+</div>
+
+        
+    </div>
+
+    <section id="home-section">
+        <div class="hero">
+            <video autoplay muted loop id="background-video">
+                <source src="videos/5494638-hd_1920_1080_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <h2>HELLO!</h2>
+                <h2>We Stitched Dress That Suit You.</h2>
+                <span id="typing-animation"></span> <!-- Animation text will appear here -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const typingAnimationElement = document.getElementById('typing-animation');
+        const typingTexts = [
+            'LAIBA TAILOR',
+            ' Welcome to ',
+        ];
+
+        let currentTextIndex = 0;
+        let currentCharIndex = 0;
+
+        function playTypingAnimation() {
+            if (currentCharIndex < typingTexts[currentTextIndex].length) {
+                typingAnimationElement.textContent += typingTexts[currentTextIndex].charAt(currentCharIndex);
+                currentCharIndex++;
+                setTimeout(playTypingAnimation, 200);
+            } else {
+                setTimeout(() => {
+                    typingAnimationElement.textContent = '';
+                    currentCharIndex = 0;
+                    currentTextIndex = (currentTextIndex + 1) % typingTexts.length;
+                    playTypingAnimation();
+                }, 1000); 
+            }
+        }
+
+        playTypingAnimation();
+    </script>
+    </section>
+
+    <section id="about-section">
+        <div class="about-content">
+            <div class="about-text-box">
+                <h2>About Us</h2>
+                <p>
+                    At LAIBA TAILORS, we specialize in custom tailoring services to meet your every need.
+                    With years of experience, our expert tailors are dedicated to providing the highest quality craftsmanship
+                    for all your garments.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="/images/pexels-photo-461035.webp" alt="Tailoring Service">
+            </div>
+        </div>
+    </section>
+
+    <section id="services-section">
+        <div class="services-heading">
+            <h2>Services</h2>
+        </div>
+        <div class="services-slider">
+            <div class="arrow left-arrow">&#10094;</div>
+            <div class="service-container">
+                <div class="service-item">
+                    <img src="/images/pexels-cottonbro-4621904.jpg" alt="Custom Tailoring">
+                    <h3>Custom Tailoring</h3>
+                    <p>Get the perfect fit with our custom tailoring services.</p>
+                    <a href="https://docs.google.com/forms/d/1Cap9JS_GPRq7jXO230IPBf7p4zK1dq59ATsFERV1OvQ/edit" class="service-button">Go for This</a>
+                </div>
+                <div class="service-item">
+                    <img src="/images/pexels-cottonbro-4621921.jpg" alt="Altering">
+                    <h3>Altering</h3>
+                    <p>Make your clothes fit perfectly with our altering services.</p>
+                    <a href="https://docs.google.com/forms/d/1Cap9JS_GPRq7jXO230IPBf7p4zK1dq59ATsFERV1OvQ/edit" class="service-button">Go for This</a>
+                </div>
+            </div>
+            <div class="arrow right-arrow">&#10095;</div>
+        </div>
+        <div class="dots-container">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    
+    <br><br><br><br>
+    <!-- Contact -->
+    <section id="contact-section">
+        
+        <h2>Contact Us</h2>
+        <div class="contact-icons">
+            <a href="tel:+923455395620" class="contact-icon" title="Call Us">
+                <i class="bi bi-telephone-forward-fill"></i>
+            </a>
+            <a href="https://wa.me/923455395620" class="contact-icon" title="WhatsApp Us">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.google.com/maps?q=G-9,+Islamabad,+Islamabad+Capital+Territory,+Pakistan" class="contact-icon" title="Our Location" target="_blank">
+                <i class="bi bi-geo-alt-fill"></i> <!-- Location Icon -->
+            </a>
+          
+        </div>
+    </section>
+    <footer>
+        <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  
+            <i class="icon-heart color-danger" aria-hidden="true"></i> 
+            <!-- <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            Link back to Colorlib can't be removed.  -->
+           Website made by <STr>ALI MUAVIA</STr>.
+        </p>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+
+    <script>
+        
+        
+        let para = document.getElementById('para');
+        para.addEventListener('click', function run(){
+            alert('RATE LIST MAY BE CHANGED NOW')
+        });
+        console.log(req.body);
+        gym.get('/', (req, res)=>{
+    const con = "This is the best content on the internet so far so use it wisely"
+    const params = {'title': 'PubG is the best game', "content": con}
+
+})
+
+    </script>
+</body>
+</html>
