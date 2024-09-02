@@ -18,7 +18,7 @@ This is the official website for LAIBA TAILORS, a professional tailoring service
 
 ## How to View
 
-The website is live and can be viewed at [LAIBA TAILORS Website](https://muavia-coder.github.io/LAIBA-TAILOR.IO/).
+The website is live and can be viewed at [LAIBA TAILORS Website](https://main.d1xb70zcl7ut13.amplifyapp.com/).
 
 ## Usage
 
